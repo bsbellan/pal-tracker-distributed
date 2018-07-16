@@ -1,0 +1,7 @@
+applications:
+- name: eureka-server
+  path: ./platform-services/eureka-server/build/libs/eureka-server.jar
+  routes:
+  - route: eureka-server-pal-allan-review.apps.pikes.pal.pivotal.io
+  memory: 1G
+  instances: 1
