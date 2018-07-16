@@ -7,6 +7,4 @@ applications:
   instances: 1
   services:
   - tracker-backlog-database
-  - tracker-service-registry 
-
-	
+  - tracker-service-registry
