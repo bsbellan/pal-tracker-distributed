@@ -7,4 +7,3 @@ applications:
   instances: 1
   services:
   - tracker-allocations-database
-  - eureka-server
