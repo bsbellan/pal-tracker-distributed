@@ -1,14 +1,20 @@
 package io.pivotal.pal.tracker.oauthserver;
 
+import org.springframework.context.annotation.Configuration;
 import org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer;
+
+
 
 /**
  * @author: Allan Braga
  * @since: 17.1
  * @Date: 7/16/2018
  */
+@Configuration
+@EnableAuthorizationServer
 public class SecurityConfig extends AuthorizationServerConfigurerAdapter {
 
     @Override

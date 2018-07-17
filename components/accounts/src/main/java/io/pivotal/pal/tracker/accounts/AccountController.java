@@ -20,6 +20,7 @@ public class AccountController {
         this.gateway = gateway;
     }
 
+
     @GetMapping("/accounts")
     public List<AccountInfo> list(@RequestParam long ownerId) {
         return gateway.findAllByOwnerId(ownerId)
